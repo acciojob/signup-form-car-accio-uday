@@ -4,10 +4,58 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<title>Signup Form Creation</title>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
+
+	<form method="post">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="Uday" required placeholder="Uday Manideep">
+		<br>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required placeholder="udaymanideep2002@gmail.com">
+		<br>
+		
+		<label>Gender:</label>
+		<input type="radio" id="gender_m" name="gender" value="male" required>
+		<label for="gender_m">Male</label>
+		<input type="radio" id="gender_f" name="gender" value="female" required>
+		<label>Female</label>
+		<br>
+		
+		<label for="cars">Car Brands:</label>
+		<select id="cars" name="cars" required>
+			<option value="">--Please choose an option</option>
+			<option value="Toyota">Toyota</option>
+			<option value="">Suzuki</option>
+			<option value="">BMW</option>
+			<option value="">Benz</option>
+		</select>
+		<br>
+
+		<label for="age">Age:</label>
+		<input type="number" id="age" name="age" required placeholder="23">
+		<br>
+
+		<label for="dob">DOB</label>
+		<input type="date" id="dob" name="dob" required>
+		<br>
+
+		<label for="tel">Phone Number</label>
+		<input type="tel" id="tel" name="tel" placeholder="9347713312">
+		<br>
+
+		<label for="password">Password</label>
+		<input type="password" id="password" name="password" required placeholder="uday@2002">
+		<br>
+
+		<input type="checkbox" id="tos" name="tos" required>
+		<label for="tos">I agree to the TOS</label>
+		<br>
+		
+	</form>
     <script type="text/javascript" src="./script.js">
 </script>
 
